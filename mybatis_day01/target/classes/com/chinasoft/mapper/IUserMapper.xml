@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--namespace:标注mapper全限定类名-->
+<mapper namespace="com.chinasoft.mapper.IUserMapper">
+
+     <!--  配置映射的结果集  -->
+    <resultMap id="userMap" type="User">
+        <id property="id" column="id" javaType="Integer"></id>
+        <result property="userName" column="user_name" javaType="java.lang.String"></result>
+        <result property="birthday" column="birthday" javaType="java.util.Date"></result>
+        <result property="age" column="age" javaType="java.lang.Integer"></result>
+        <result property="gender" column="gender" javaType="String"></result>
+        <result property="address" column="address" javaType="java.lang.String"/>
+    </resultMap>
+
+<!--    删除一个用户  -->
+    <delete id="deleteUser" parameterType="Integer">
+        delete from tab_user where id=#{id}
+    </delete>
+
+
+    <!--    查询所有用户 -->
+    <select id="findAll" resultMap="userMap">
+        select * from tab_user
+    </select>
+
+    <!-- 根据id查询用户   -->
+    <select id="findOne" resultMap="userMap">
+        select * from tab_user where id=#{id}
+    </select>
+
+<!--  根据条件查询用户信息 动态sql -->
+<!--    <select id="findUserByCondition" resultMap="userMap" parameterType="User">-->
+<!--        select * from tab_user where 1 = 1-->
+<!--        <if test="userName !=null and userName != ''">-->
+<!--            AND user_name like "%"#{userName}"%"-->
+<!--        </if>-->
+<!--        <if test="gender != null and gender !=''">-->
+<!--            AND gender like "%"#{gender}"%"-->
+<!--        </if>-->
+<!--    </select>-->
+
+
+    <select id="findUserByCondition" resultMap="userMap" parameterType="User">
+        select * from tab_user
+        <where>
+            <if test="userName !=null and userName != ''">
+                 user_name like "%"#{userName}"%"
+            </if>
+            <if test="gender != null and gender !=''">
+                AND gender like "%"#{gender}"%"
+            </if>
+        </where>
+    </select>
+
+
+    <!--  插入user对象 useGeneratedKeys="true"   -->
+    <insert id="addUser" parameterType="User" useGeneratedKeys="true" keyProperty="id">
+        insert into tab_user(user_name,birthday,age,gender,address) values (#{userName},#{birthday},#{age},#{gender},#{address})
+    </insert>
+
+
+<!--    修改用户信息-->
+    <update id="updateUser" parameterType="User">
+        update tab_user set user_name=#{userName},birthday=#{birthday},age=#{age},gender=#{gender},address=#{address} where id=#{id}
+    </update>
+
+
+
+
+
+
+
+
+
+</mapper>

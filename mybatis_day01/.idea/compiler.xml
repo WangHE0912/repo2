@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="spring_day01" />
+        <module name="spring_day03_annXML_user" />
+        <module name="spring_day04_aop_annotation" />
+        <module name="spring_day04_proxy" />
+        <module name="spring_day03_withoutXML_user" />
+        <module name="ssm" />
+        <module name="springmvc_day03" />
+        <module name="springmvc_day02" />
+        <module name="springmvc_day01" />
+        <module name="spring_day02_DI" />
+        <module name="mybatis_day03" />
+        <module name="mybatis_day02" />
+        <module name="mybatis_day01" />
+        <module name="mybatis_day02_Annotation" />
+        <module name="spring_day01_beanFactory" />
+        <module name="spring_day04_aop" />
+        <module name="spring_day02_Annotation" />
+        <module name="spring_day03_account" />
+        <module name="spring_day02_xmlDI_user" />
+        <module name="spring_day01_spring" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="spring_aop_annotaition" target="1.5" />
+      <module name="spring_day01_02" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

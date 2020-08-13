@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_day01" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_day02" />
+    <file type="web" url="file://$PROJECT_DIR$/../springmvc_day03" />
+    <file type="web" url="file://$PROJECT_DIR$/../ssm" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/../mybatis_day02/pom.xml" />
+        <option value="$PROJECT_DIR$/../mybatis_day02_Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/../mybatis_day03/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day01_beanFactory/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day01_spring/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day02_DI/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day02_xmlDI_user/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day02_Annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day03_annXML_user/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day03_withoutXML_user/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day03_account/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day04_proxy/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day04_aop/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_aop_annotaition/pom.xml" />
+        <option value="$PROJECT_DIR$/../spring_day04_aop_annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_day01/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_day02/pom.xml" />
+        <option value="$PROJECT_DIR$/../springmvc_day03/pom.xml" />
+        <option value="$PROJECT_DIR$/../ssm/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_9" project-jdk-name="9" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>
